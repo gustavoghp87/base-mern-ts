@@ -1,0 +1,38 @@
+{
+  "name": "base-mern-ts",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server/server.js",
+    "backend": "nodemon server/server.js",
+    "frontend": "npm run front --prefix client",
+    "dev": "concurrently \"cross-env NODE_ENV=development npm run backend\" \"npm run start --prefix client\"",
+    "prod": "cross-env NODE_ENV=production nodemon server/server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.5",
+    "mongoose": "^5.9.27",
+    "morgan": "^1.10.0",
+    "react-scripts": "^3.4.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoghp87/base-mern-ts.git"
+  },
+  "author": "ghp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavoghp87/base-mern-ts/issues"
+  },
+  "homepage": "https://github.com/gustavoghp87/base-mern-ts#readme"
+}
